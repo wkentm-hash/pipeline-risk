@@ -10,12 +10,16 @@ This model does not use "safety multipliers." Instead, it requires the Risk Asse
 
 ## 🏗 Mathematical Framework
 ### Frequency of Failure (FoF)
+
 $$FoF = \text{Exposure} \times (1 - \text{Mitigation}) \times (1 - \text{Resistance})$$
+
 $$TTF = {Resistance} / (Exposure \times (1-Mitigation))$$
+
 **Time-Dependent Threats:** Modeled via a **Weibull Distribution** to determine the annual frequency of reaching a defined Limit State (Critical Wall Thickness).
 
 ### Consequence of Failure (CoF)
 Calculated as the consequence potential based on the physical **Hazard Zone** that could result from a pipeline release:
+
 $$\text{CoF (\$)} = \text{Spill } (ft^3) \times \text{Spread } (ft^2/ft^3) \times \text{Receptor } (Units/ft^2) \times \text{Product } (\$/Unit)$$
 
 ## 🚀 Getting Started
